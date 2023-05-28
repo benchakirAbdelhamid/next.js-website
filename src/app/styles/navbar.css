@@ -1,0 +1,114 @@
+
+/* ================== */
+.header {
+    min-height: 90vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    padding: 50px 0;
+    position: relative;
+}
+.container {
+    padding: 0 7%;
+    /* border: 1px solid rgb(63, 22, 22); */
+    position: absolute;
+    bottom: 50px;
+    
+}
+.header h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: #4e4e4e;
+    text-align: center;
+    /* padding-top: 2%; */
+}
+
+.search-bar {
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+    /* margin-bottom:20px ; */
+    /* border: 1px solid red; */
+    background-color: #d3d0d0;
+}
+.search-bar form {
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.search-bar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button {
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button  {
+    /* width: 15px; */
+    /* margin-top: 7px; */
+    color: wheat;
+}
+.location-input {
+    flex: 1;
+}
+.search-bar form label {
+    font-weight: 600;
+}
+
+
+/* for small screen devices */
+@media only screen and (max-width:1030px) {
+    nav{
+       position: fixed;
+       top: 0;
+       z-index: 100;
+       display: inline-block;
+       width: 100%;
+       padding: 100px 7% 0;
+       background: #000;
+       text-align: right ; 
+       max-height: 100px;
+       overflow: hidden;
+       transition: max-height 0.5s;
+    }
+
+
+
+    .search-bar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px ;
+        border-radius: 5px;
+        position: relative;
+    }
+    .search-bar form{
+        display: block;
+    }
+    .search-bar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar form button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+    }
+
+}
